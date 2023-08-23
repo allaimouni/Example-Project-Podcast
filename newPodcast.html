@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>Podcasts Web </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=divice-width, intitial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" >
+    <link rel="stylesheet" type="text/css"  href="assets/css/forms.css">
+    <link rel="stylesheet" type="text/css"  href="assets/css/grid.css">
+</head>
+
+<body>
+    <figure >
+        <img id="i" style="margin-bottom: 25px;" src="assets/img/podcast-station-logo-neon-signs_626x.jpg"   alt="working draft logo">
+         <figcaption>
+            podcast
+        </figcaption> 
+    </figure>
+    
+    <h1>newPodcast</h1>
+    
+    
+        <nav >
+            
+            <a href="index.html">Abonnierte Podcasts</a>
+            | <a href="Podcast.html">Detailseite zu einem Podcast</a>
+            | <a href="episode.html">Detailseite zu einer Episode</a>
+            | <a href="newPodcast.html">NeuesPodcast</a>
+            
+        </nav>
+        <br>
+    <main id="container2">
+    <fieldset id="haupt">
+        <h1 style="color: grey; text-align: left;" ><span>N</span>EUEN PODCAST HINZUFÜGEN</h1>
+        <form action="https://labs.inf.fh-dortmund.de/podcastService/testCreatePodcast.php" method="post" id="finde">
+        <fieldset>
+            <legend> Podcast-informationen </legend>
+        
+            
+               
+            <p>
+                <label class="r">Titel
+                    <input name="pctitle" placeholder="1.Buchstabe[A-Z]"  maxlength="100"  pattern="[A-Z][a-zA-Z]*" required> 
+                </label>
+            </p>
+            <p>
+                <label>
+                    Kategorie(n) auswählen:
+                    <select name="pccategories" multiple>
+                        <option value="Nachrichten des Tages">Nachrichten des Tages</option>
+                        <option value=" Neues aus der Technik"> Neues aus der Technik</option>
+                        <option value="Politik">Politik</option>
+                        <option value="Sportnews">Sportnews</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>Beschreibung <br>
+                    <textarea name="pcdescription" class="c" placeholder="Max.500Zeichen" maxlength="500">  </textarea> 
+                </label>
+            </p>
+        </fieldset>
+            
+                <fieldset id="edit2"> 
+                    <legend >Verantwortliche Personen</legend>
+                <label>Autor(en)
+                    <input class="r" name="pcauthors" placeholder="Yi Jie Jen,Anke Schmidt"
+                        pattern=".*[^,]{1,}$">
+                </label>
+            
+            <p>
+                <label class="r"> Name des
+                    Besitzers
+                    <input  name="pcownername" required>
+                    </label>
+            </p>
+            <p>
+                <label class="r" id="s">E-Mail des
+                    Besitzers
+                    <input  type="email" name="pcowneremail" placeholder="example@mail.com" required>
+                    </label>
+            </p>
+               </fieldset>
+            <fieldset id="edit1">
+                <legend >Letzte Ubdate</legend>
+            <p>
+                <label class="r">
+                    Datum:
+                    <input  name  ="pclastupdatedate" type="date" value="2021-12-10" min="2000-01-01" required>
+                    </label>
+            </p>
+            <p>
+                <label>
+                    Uhrzeit:
+                    <input class="r" name="pclastupdatetime"  type="time" value="12:00"  required > </label>
+            </p>
+        </fieldset>
+            
+        
+    
+        <br>
+        <input id="button" form="finde" type="submit"> <br> 
+        </fieldset>
+
+        <aside>
+            <label>* bedeutet erforderliche Eingabe</label>
+            <h1>Neueste Episoden</h1>
+            <ul>
+                <li>25.10.2022:Working Draft-Ungeplant gastliches Glücksrad</li>
+            </ul>
+        </aside>
+
+    </main>
+    
+        <footer >
+            &#169; by WebTech Inc.
+        </footer>
+</body>

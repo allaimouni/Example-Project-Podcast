@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Podcasts Web </title>
+    <link rel="icon"  type="image/png" href="assets/img/images.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=divice-width, intitial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" >
+    <link rel="stylesheet" type="text/css"  href="assets/css/forms.css">
+    <link rel="stylesheet" type="text/css"  href="assets/css/flex.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
+    <script src="assets/js/script.js" ></script>
+
+</head>
+
+<body>
+    <figure>
+        <img id="i" src="assets/img/podcast-station-logo-neon-signs_626x.jpg"  height="200" alt="working draft logo">
+          <figcaption>
+            podcast
+        </figcaption> 
+    </figure>
+    <h1>Podcasts Web</h1>
+   
+    <nav>
+        <a href="index.html">Abonnierte Podcasts</a>
+        | <a href="Podcast.html">Detailseite zu einem Podcast</a>
+        | <a  href="episode.html">Detailseite zu einer Episode</a>
+        | <a href="newPodcast.html">NeuesPodcast</a>
+       
+    </nav>
+    <div id="container">
+    <main>
+        <h2>abonnierte Podcasts</h2>
+        
+        <form action="https://labs.inf.fh-dortmund.de/podcastService/testPodcastSearch.php" method="get" id="pctitle">
+            <p>
+                <label class="r">Finden
+                    <input name="pctitle" placeholder="pctitle" required 
+                    maxlength="100" pattern="[A-Z].*" > 
+                    
+                </label>
+            </p>
+            <input  form="pctitle" type="submit" id="button">
+        </form>
+        <h1 >Mein Podcast</h1>
+        <button id="btn">listenansicht</button>
+        <ul id="flex">
+          
+            <li >
+              <a href="podcast.html"
+                ><img class="kachel"
+                  src="assets/img/bild2.jfif"
+                  width="150"
+                  height="100"
+                  alt="working draft logo"
+                /><br class="kachel"> Working draft</a
+              >
+            </li>
+          
+          
+            <li >
+              <a href="podcast.html"
+                ><img class="kachel"
+                  href="podcast.html"
+                  src="assets/img/bild3.jfif"
+                  width="150"
+                  height="100"
+                  alt="working draft logo"
+                /> <br class="kachel">BSP</a
+              >
+            </li>
+            <li >
+              <a href="podcast.html"
+                ><img class="kachel"
+                  src="assets/img/bild4.jfif"
+                  width="150"
+                  height="100"
+                  alt="working draft logo" 
+                /> <br class="kachel">Stuff you should know</a
+              >
+            </li>
+
+            <li >
+              <a href="podcast.html"
+                ><img class="kachel"
+                  src="assets/img/Herunterladen.jfif"
+                  width="150"
+                  height="100"
+                  alt="working draft logo"
+                /> <br class="kachel">supersoul conversation</a
+              >
+            </li>
+          
+        </ul>
+       <!--
+       <ul >
+            <li><a href="podcast.html">Working Draft</a> (24)</li>
+            <li><a href="podcast.html"> BSP </a>(30)</li>
+            <li><a href="podcast.html"> stuff you should know </a>(10)</li>
+            <li><a href="podcast.html"> supersoul conversation </a>(25)</li>
+
+        </ul>-->
+
+    </main>
+    <aside>
+        <h1>Neueste Episoden</h1>
+        <ul>
+            <li>25.10.2022:Working Draft-Ungeplant gastliches Glücksrad</li>
+        </ul>
+    </aside>
+</div>
+    <footer>
+        &#169; by WebTech Inc.
+    </footer>
+    <script src="assets/js/index.js" ></script>
+    <!--Unsicher-->
+    <script src="assets/js/tictac.js" ></script>
+</body>
+
+</html>

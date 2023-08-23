@@ -1,0 +1,12 @@
+#container{
+    display:flex;
+}
+main{    
+    flex-grow:1;
+    flex-basis:75%
+}
+@media screen and (max-width: 768px) {
+    #container{
+        display:block;
+    }
+}

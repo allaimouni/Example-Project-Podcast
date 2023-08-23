@@ -1,0 +1,93 @@
+h1,h2{
+    color:rgb(64, 90, 134);
+    font-style:italic;
+    font-size: large;
+}
+
+body>h1{
+    text-align: center;
+text-decoration: underline;
+color:rgb(19, 41, 92);
+}
+ span {
+    color:orange;
+}
+
+ nav a{
+    text-align: center;
+    text-decoration:none;
+    }
+    :visited{
+        color: black; 
+    }
+table,th,td{
+    border:1px solid;
+    border-collapse: collapse;
+    padding:5px;
+}
+table{
+    box-shadow: 3px 3px 2px 1px gray;
+}
+aside , nav{
+  background-color: rgb(240, 226, 209);
+  color :black;
+}
+label ,legend {
+    font-weight:bold;
+}
+.c{
+    width:250px ;
+    height:250px;
+    resize:none
+}
+fieldset h1{
+    margin-top: 0;
+}
+aside {
+    border-radius: 15px;
+    border: solid;
+}
+nav a{
+    border: solid;
+    margin-left: 5px;
+    margin-left: 5px;
+}
+nav a:hover{
+    background-color: white;
+   
+}
+ #o tr:nth-of-type(odd){
+    background-color:rgb(173, 123, 123) ;
+}
+ #o th{
+   background-color: rgb(238, 224, 224);
+}
+*{
+    font-family:Helvetica;
+}
+#s::before{
+    content:"✉";
+}
+#i{
+    float:left;
+   max-width: 25%;
+}
+nav{
+    clear:both
+}
+figcaption{
+    visibility: hidden;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+footer{
+    position:fixed;
+    bottom:0;
+  left:0;
+  border:solid;
+  background-color: antiquewhite;
+}
+
+

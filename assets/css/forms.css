@@ -1,0 +1,42 @@
+.r::after{content:"*";
+color : red}
+
+/* input[name],textarea:valid {background-color: rgb(240, 226, 209);}
+input[name]:invalid {background-color: rgb(107, 3, 3);}*/
+input[name]:valid {border-color: rgb(240, 226, 209);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+input[name]:invalid {border-color: rgb(107, 3, 3);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;}
+
+input[name]:hover{background-color: rgb(180, 200, 210);}
+#button{
+    background-color:  rgb(240, 226, 209);
+    border-radius:30%;
+}
+#button:hover{
+    border-color: rgb(198, 187, 123);
+}
+legend{
+    border:solid ;
+    border-radius: 5px;
+    border-bottom: 0px;
+    border-top: 0px;
+    
+}
+#edit1, #edit2{
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px ;
+}
+#edit2{
+    margin-top: 10px;
+}
+
+
+
+

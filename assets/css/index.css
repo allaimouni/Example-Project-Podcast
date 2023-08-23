@@ -1,0 +1,95 @@
+h1,
+h2 {
+  color: rgb(64, 90, 134);
+  font-style: italic;
+}
+
+body > h1 {
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(19, 41, 92);
+}
+aside,
+nav {
+  background-color: rgb(240, 226, 209);
+  color: black;
+}
+nav,
+nav a {
+  text-align: center;
+  text-decoration: none;
+}
+:visited {
+  color: black;
+}
+aside {
+  border-radius: 15px;
+}
+nav a {
+  border: solid;
+}
+nav a:hover {
+  background-color: white;
+}
+figure img {
+  float: left;
+}
+nav {
+  clear: both;
+}
+figcaption {
+  visibility: hidden;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border: solid;
+  background-color: antiquewhite;
+}
+input[name]:valid {
+  border-color: rgb(240, 226, 209);
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+input[name]:invalid {
+  border-color: rgb(107, 3, 3);
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+input[name]:hover {
+  background-color: rgb(180, 200, 210);
+}
+#flex  {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row wrap;
+ 
+  justify-content: space-between;
+}
+li {
+  margin-bottom: 5%;
+  margin-right: 5%;
+}
+
+#container {
+  display: flex;
+}
+main {
+  flex-grow: 1;
+  flex-basis: 75%;
+}
+@media screen and (max-width: 768px) {
+  #container {
+  display: block
+  }
+
+  
+}
